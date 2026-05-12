@@ -31,8 +31,7 @@ type ImagesReference struct {
 	CloudControllerManagerOpenStack string `json:"cloudControllerManagerOpenStack"`
 	CloudControllerManagerVSphere   string `json:"cloudControllerManagerVSphere"`
 	CloudControllerManagerPowerVS   string `json:"cloudControllerManagerPowerVS"`
-	CloudControllerManagerNutanix      string `json:"cloudControllerManagerNutanix"`
-	CloudControllerManagerAlibabaCloud string `json:"cloudControllerManagerAlibabaCloud"`
+	CloudControllerManagerNutanix   string `json:"cloudControllerManagerNutanix"`
 }
 
 // OperatorConfig contains configuration values for templating resources

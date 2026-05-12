@@ -10,7 +10,6 @@ import (
 	"github.com/openshift/cluster-cloud-controller-manager-operator/pkg/config"
 	"github.com/openshift/library-go/pkg/operator/configobserver/featuregates"
 
-	"github.com/openshift/cluster-cloud-controller-manager-operator/pkg/cloud/alibaba"
 	"github.com/openshift/cluster-cloud-controller-manager-operator/pkg/cloud/aws"
 	"github.com/openshift/cluster-cloud-controller-manager-operator/pkg/cloud/azure"
 	"github.com/openshift/cluster-cloud-controller-manager-operator/pkg/cloud/azurestack"
@@ -67,8 +66,6 @@ func GetCloudConfigTransformer(platformStatus *configv1.PlatformStatus) (cloudCo
 		return vsphere.CloudConfigTransformer, false, nil
 	case configv1.NutanixPlatformType:
 		return common.NoOpTransformer, false, nil
-	case configv1.AlibabaCloudPlatformType:
-		return alibaba.CloudConfigTransformer, false, nil
 	default:
 		return nil, false, newPlatformNotFoundError(platformStatus.Type)
 	}
@@ -134,8 +131,6 @@ func getAssetsConstructor(platformStatus *configv1.PlatformStatus) (assetsConstr
 		return vsphere.NewProviderAssets, nil
 	case configv1.NutanixPlatformType:
 		return nutanix.NewProviderAssets, nil
-	case configv1.AlibabaCloudPlatformType:
-		return alibaba.NewProviderAssets, nil
 	default:
 		return nil, newPlatformNotFoundError(platformStatus.Type)
 	}

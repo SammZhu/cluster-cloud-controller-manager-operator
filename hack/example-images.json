@@ -1,5 +1,4 @@
 {
     "cloudControllerManagerAWS": "quay.io/openshift/origin-aws-cloud-controller-manager",
-    "cloudControllerManagerOpenStack": "quay.io/openshift/origin-openstack-cloud-controller-manager",
-    "cloudControllerManagerAlibabaCloud": "registry.k8s.io/provider-alibaba-cloud/alibaba-cloud-controller-manager:v2.7.0"
+    "cloudControllerManagerOpenStack": "quay.io/openshift/origin-openstack-cloud-controller-manager"
 }
