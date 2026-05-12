@@ -3,5 +3,6 @@
     "cloudControllerManagerAWS": "registry.ci.openshift.org/openshift:aws-cloud-controller-manager",
     "cloudControllerManagerOpenStack": "registry.ci.openshift.org/openshift:openstack-cloud-controller-manager",
     "cloudControllerManagerAzure": "quay.io/openshift/origin-azure-cloud-controller-manager",
-    "cloudNodeManagerAzure": "quay.io/openshift/origin-azure-cloud-node-manager"
+    "cloudNodeManagerAzure": "quay.io/openshift/origin-azure-cloud-node-manager",
+    "cloudControllerManagerAlibabaCloud": "registry.k8s.io/provider-alibaba-cloud/alibaba-cloud-controller-manager:v2.7.0"
 }
